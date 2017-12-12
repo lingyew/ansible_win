@@ -1,0 +1,5 @@
+---
+- name: Install OpenSSH
+  win_chocolatey:
+    name: openssh
+    state: present

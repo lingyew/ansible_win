@@ -4,4 +4,5 @@
   gather_facts: true
   roles:
     - win_ad_install
+    - win_package_install
 
