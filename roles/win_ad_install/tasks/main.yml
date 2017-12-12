@@ -5,3 +5,8 @@
     include_management_tools=yes
     include_sub_features=yes
     state=present
+
+
+- win_domain:
+    dns_domain_name: ad1.6e7a.example.opentlc.com
+    safe_mode_password: jVMijRwLbI02gFCo2xkjlZ9lxEA7bm7zgg==
