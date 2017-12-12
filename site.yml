@@ -1,0 +1,6 @@
+---
+- name: Install AD-Domain-Services feature
+  hosts: windows
+  gather_facts: true
+  roles:
+    - win_ad_install
