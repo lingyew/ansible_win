@@ -5,5 +5,3 @@
   roles:
     - win_ad_install
 
-- name: Print our the domain name list
-  shell: nltest /dclist:{{ ad_domain_name }}")
