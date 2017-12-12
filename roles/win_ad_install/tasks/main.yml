@@ -7,13 +7,15 @@
     state=present
 
 
-- win_domain:
+- name: Win Domain registration
+  win_domain:
     dns_domain_name: ad1.6e7a.example.opentlc.com
     safe_mode_password: jVMijRwLbI02gFCo2xkjlZ9lxEA7bm7zgg==
   register: domain_state
 
-- win_reboot:
+- name: Windows reboot
+  win_reboot:
     when: domain_state.reboot_required
 
-- name: Print our the domain name list
+- name: Print out the domain name list
   shell: nltest /dclist:{{ ad1.6e7a.example.opentlc.com }}")
