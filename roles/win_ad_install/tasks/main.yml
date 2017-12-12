@@ -17,5 +17,5 @@
   win_reboot:
     when: domain_state.reboot_required
 
-- name: Print out the domain name list
-  shell: nltest /dclist:{{ ad1.6e7a.example.opentlc.com }}")
+#- name: Print out the domain name list
+#  shell: nltest /dclist:{{ ad1.6e7a.example.opentlc.com }}")
